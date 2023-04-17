@@ -1,31 +1,16 @@
-require("winbar").setup({
-	enabled = true,
-	show_file_path = false,
-	show_symbols = false,
-	colors = {
-		path = "", -- You can customize colors like #c946fd
-		file_name = "#FFFFFF",
-		symbols = "",
-	},
-	icons = {
-		file_icon_default = "",
-		seperator = "/",
-		editor_state = "●",
-		lock_icon = "",
-	},
-	exclude_filetype = {
-		"help",
-		"startify",
-		"dashboard",
-		"packer",
-		"neogitstatus",
-		"NvimTree",
-		"Trouble",
-		"alpha",
-		"lir",
-		"Outline",
-		"spectre_panel",
-		"toggleterm",
-		"qf",
-	},
-})
+local M = {}
+
+function M.eval()
+  return 'test'
+end
+
+-- function M.eval()
+  -- local file_path = vim.api.nvim_eval_statusline('%f', {}).str
+  -- local modified = vim.api.nvim_eval_statusline('%M', {}).str == '+' and '●' or ''
+
+  --[[ file_path = file_path:gsub('', '') ]]
+
+  -- return string.format('%s %s', file_path, modified)
+  -- return test
+
+-- return M

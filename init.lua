@@ -24,12 +24,11 @@ require('prettier-config')
 require('discord-config')
 require('surround-config')
 require('smart-splits-config')
-require('winbar-config')
---[[ require('pretty-fold-config') ]]
---[[ require('fold-preview-config') ]]
---[[ require('hologram-config') ]]
+--[[ require('winbar-config') ]]
 
--- hide winbar for nvim-tree
---[[ vim.opt.winbar = "%f" ]]
 
+-- vim.o.winbar = "%{%v:lua.require('winbar-config').eval()%}"
+
+vim.cmd('hi WinBar guibg=#011826')
+vim.cmd('hi WinBarNC guibg=#000000')
 vim.cmd('colorscheme tokyonight-moon')

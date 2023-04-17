@@ -101,7 +101,7 @@ bufferline.setup {
     -- background of non active
     background = {
       --[[ guifg = { attribute = "fg", highlight = "TabLine" }, ]]
-      fg = { attribute = "fg", highlight = "none" },
+      --[[ fg = { attribute = "fg", highlight = "none" }, ]]
       --[[ fg = '#011826', ]]
       --[[ guibg = { attribute = "bg", highlight = "TabLine" }, ]]
       --[[ bg = { attribute = "bg", highlight = "none" }, ]]
@@ -121,14 +121,14 @@ bufferline.setup {
 
     -- actual close button
     close_button = {
-      fg = { attribute = "fg", highlight = "none" },
+      --[[ fg = { attribute = "fg", highlight = "none" }, ]]
       -- guifg = { attribute = "fg", highlight = "none" },
       -- guibg = { attribute = "bg", highlight = "TabLine" },
       --[[ bg = { attribute = "bg", highlight = "#011826" }, ]]
       bg = "#011826",
     },
     close_button_visible = {
-      fg = { attribute = "fg", highlight = "TabLine" },
+      --[[ fg = { attribute = "fg", highlight = "TabLine" }, ]]
       --[[ bg = { attribute = "bg", highlight = "none" }, ]]
       bg = "#011826",
     },
@@ -154,8 +154,9 @@ bufferline.setup {
       --[[ bg = { attribute = "bg", highlight = "Normal" }, ]]
     },
     modified = {
-      fg = { attribute = "fg", highlight = "none" },
-      bg = { attribute = "bg", highlight = "none" },
+      --[[ fg = { attribute = "fg", highlight = "none" }, ]]
+      --[[ bg = { attribute = "bg", highlight = "none" }, ]]
+      bg = "#011826"
     },
     modified_selected = {
       fg = { attribute = "fg", highlight = "Normal" },
@@ -170,11 +171,11 @@ bufferline.setup {
       -- guifg = { attribute = "bg", highlight = "TabLine" },
       fg = { attribute = "bg", highlight = "none" },
       -- guibg = { attribute = "bg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "none" },
+      bg = { attribute = "bg", highlight = "#011826" },
     },
     separator_selected = {
       fg = { attribute = "bg", highlight = "none" },
-      bg = { attribute = "bg", highlight = "none" },
+      bg = { attribute = "bg", highlight = "#011826" },
     },
     -- separator_visible = {
     --   guifg = {attribute='bg',highlight='TabLine'},
@@ -182,7 +183,7 @@ bufferline.setup {
     --   },
     indicator_selected = {
       fg = { attribute = "fg", highlight = "LspDiagnosticsDefaultHint" },
-      bg = { attribute = "bg", highlight = "Normal" },
+      bg = { attribute = "bg", highlight = "#011826" },
     },
   },
 }

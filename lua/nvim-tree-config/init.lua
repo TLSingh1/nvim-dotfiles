@@ -15,9 +15,17 @@ nvim_tree.setup {
     enable = true,
     update_cwd = true,
   },
+  on_attach = function(bufnr)
+    vim.opt_local.winbar = nil
+  end,
   filters = {
     dotfiles = false,
   },
+  --[[ on_attach = function(bufnr) ]]
+  --[[   if vim.bo.filetype == 'NvimTree' then ]]
+  --[[     vim.o.winbar = nil ]]
+  --[[   end ]]
+  --[[ end, ]]
   renderer = {
     root_folder_modifier = ":t",
     icons = {
