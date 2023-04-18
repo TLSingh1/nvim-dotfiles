@@ -29,6 +29,6 @@ require('smart-splits-config')
 
 -- vim.o.winbar = "%{%v:lua.require('winbar-config').eval()%}"
 
-vim.cmd('hi WinBar guibg=#011826')
-vim.cmd('hi WinBarNC guibg=#000000')
+vim.cmd('hi WinBar guibg=#011826 guifg=#ff44e0')
+vim.cmd('hi WinBarNC guibg=#000000 guifg=#ff44e0')
 vim.cmd('colorscheme tokyonight-moon')

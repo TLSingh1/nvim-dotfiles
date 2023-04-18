@@ -58,16 +58,16 @@ require("tokyonight").setup({
     hl.TelescopePromptTitle = {
       bg = prompt,
       --[[ fg = prompt, ]]
-      fg = "#FFFFFF",
+      fg = "#1aFFFF",
     }
     hl.TelescopePreviewTitle = {
       --[[ bg = c.bg_dark, ]]
       --[[ fg = c.bg_dark, ]]
-      fg = "#FFFFFF",
+      fg = "#1aFFFF",
     }
     hl.TelescopeResultsTitle = {
       --[[ bg = c.bg_dark, ]]
-      fg = "#FFFFFF",
+      fg = "#1aFFFF",
     }
   end,
 })
